@@ -1,3 +1,10 @@
+module.exports = {
+	checkDate,
+	gcdTwoNumber,
+	lcmTwoNumber,
+	mostCharracter,
+};
+
 function checkDate(dateChoice) {
 	let datee = new Date(dateChoice);
 	let day = datee.getDay();
@@ -59,10 +66,3 @@ function mostCharracter(text) {
 		}
 	}
 }
-
-module.exports = {
-	checkDate,
-	gcdTwoNumber,
-	lcmTwoNumber,
-	mostCharracter,
-};
