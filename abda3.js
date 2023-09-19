@@ -2,7 +2,7 @@ function lcmTwoNumber(a, b) {
 	let sumA = [];
 	let sumB = [];
 	let i = 1;
-	while (true) {
+	do {
 		sumA.push(a * i);
 		sumB.push(b * i);
 		i++;
@@ -14,4 +14,5 @@ function lcmTwoNumber(a, b) {
 			}
 		}
 	}
+	while (true);
 }
