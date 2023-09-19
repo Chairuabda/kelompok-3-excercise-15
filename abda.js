@@ -32,31 +32,37 @@ function lcmTwoNumber(a, b) {
 				}
 			}
 		}
-	}
-	while (true);
+	} while (true);
 }
 
 function mostCharracter(text) {
-    const string = text.toLowerCase().split("").sort();
-    console.log(string)
-    let counter = {};
-    let penampung = [];
+	const string = text.toLowerCase().split("").sort();
+	console.log(string);
+	let counter = {};
+	let penampung = [];
 
-    for (let x of string) {
-        if (x in counter) {
-          counter[x] += 1;
-        } else {
-          counter[x] = 1;
-        }
-      }
-    for (let x in counter) {
-      penampung.push(counter[x]);
-      penampung.sort((a, b) => a - b);
-    }
-    let theMost = penampung[penampung.length - 1];
-    for (let x in counter) {
-      if (counter[x] === theMost) {
-        return x;
-      }
-    }
+	for (let x of string) {
+		if (x in counter) {
+			counter[x] += 1;
+		} else {
+			counter[x] = 1;
+		}
+	}
+	for (let x in counter) {
+		penampung.push(counter[x]);
+		penampung.sort((a, b) => a - b);
+	}
+	let theMost = penampung[penampung.length - 1];
+	for (let x in counter) {
+		if (counter[x] === theMost) {
+			return x;
+		}
+	}
 }
+
+module.exports = {
+	checkDate,
+	gcdTwoNumber,
+	lcmTwoNumber,
+	mostCharracter,
+};
