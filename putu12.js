@@ -32,3 +32,4 @@ function ageCalculator(yearBorn, monthBorn, dateBorn) {
 console.log(ageCalculator(2000, 1, 19));
 console.log(ageCalculator(1995, 9, 20));
 console.log(ageCalculator(1999, 9, 25));
+console.log(ageCalculator(2005, 3, 7));
